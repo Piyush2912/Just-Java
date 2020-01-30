@@ -9,6 +9,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="16dp"
     >
     <TextView
         android:layout_width="wrap_content"
@@ -17,7 +18,7 @@
         android:fontFamily="sans-serif-light"
         android:textColor="@android:color/darker_gray"
         android:textSize="16sp"
-        android:padding="16dp"
+        android:layout_marginBottom="16dp"
         tools:ignore="MissingConstraints" />
      <TextView
          android:layout_width="wrap_content"
@@ -27,8 +28,24 @@
          android:fontFamily="sans-serif-light"
          android:textSize="16sp"
          android:textColor="@android:color/black"
-         android:padding="16dp"
+         android:layout_marginBottom="16dp"
          tools:ignore="MissingConstraints" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="Price"
+        android:textColor="@android:color/black"
+        android:textSize="16dp"
+        android:layout_marginBottom="16dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/price_text_view"
+        android:layout_marginBottom="16dp"
+        />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
