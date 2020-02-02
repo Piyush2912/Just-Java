@@ -13,6 +13,8 @@ import java.text.NumberFormat;
  */
 public class MainActivity extends AppCompatActivity {
 
+    int quantity = 2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +28,16 @@ public class MainActivity extends AppCompatActivity {
        int noofcupsofcofee = 2;
         display(noofcupsofcofee);
         displayPrice(noofcupsofcofee*5);
+    }
+
+    public void Increment(View view){
+        quantity = quantity + 1;
+        display(quantity);
+    }
+
+    public void Decrement(View view){
+        quantity = quantity -1;
+        display(quantity);
     }
 
     /**
